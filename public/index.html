@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter</title>
+
+
+	<meta property="og:title" content="WebP Optimizer by Durrwin">
+	<meta property="og:description" content="Reduce Network, and Optimize Your Site, With This Image Optimizer">
+	<!-- <meta property="og:image" content=""> -->
+	<meta property="og:url" content="https://image-optimizer.durrstudios.repl.co">
+	<!-- <meta name="twitter:card" content="summary_large_image"> -->
+	
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Image Optimizer by Durr Studios</h1>
+
+        <!-- Upload Single File Form -->
+        <form action="/upload/single" method="post" enctype="multipart/form-data" class="mb-4">
+            <h2 class="h5">Upload Single Image</h2>
+            <div class="mb-3">
+                <input type="file" name="image" accept="image/*" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Convert to WebP</button>
+        </form>
+
+        <!-- Upload Folder Form -->
+        <form action="/upload/folder" method="post" enctype="multipart/form-data">
+            <h2 class="h5">Upload Folder of Images</h2>
+            <div class="mb-3">
+                <input type="file" name="images" multiple directory webkitdirectory class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Convert to WebP</button>
+        </form>
+    </div>
+
+    <!-- Centered Button with Link -->
+    <div class="text-center mt-4">
+        <a href="/images" class="btn btn-secondary">Go to Images</a>
+    </div>
+
+    <!-- Include Bootstrap JS (optional, but required for some features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
